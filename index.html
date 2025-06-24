@@ -28,9 +28,23 @@
         <code>testArray = ["pork", "chicken", "beef"];</code>
         <h3>You Don't Have to Provide Any Elements First</h3>
             <p>you can just declare an empty array first:</p>
-            <code>meats = [];</code>
+            <code>const meats = [];</code>
             <p>then afterwards you can add values to the array:</p>
-            <code>meats[0] = "chicken"</code>
-            <code>meats[1] = "beef"</code>
+            <p><code>meats[0] = "chicken"</code></p>
+            <p><code>meats[1] = "beef"</code></p>
+    <h2>Using the Javascript Keyword “new” (seems kinda jank and not useful)</h2>
+        <p><code>const clothes = new Array("hats", "shirts", "pants", "shoes");</code></p>
+        <p>w3schools says that “for simplicity, readability and execution speed, use the array literal method.” instead of the Javascript keyword “new”, and that they both do exactly the same thing in practice. So it sounds to me like this "new" keyword isn't really useful for making arrays.</p>
+<h1>Array Methods and Properties</h1>
+<p>Apparently Arrays are powerful because hey have a bunch of built-in methods and properties.</p>
+    <h2>array.length Property</h2>
+    <p>let's say you wanna find out how many elements there are in an array - you can just use the array.length property and it'll return that value. E.g.</p>
+    <p><code>electronics = ["phone", "microwave", "vacuum cleaner"];</code></p>
+    <p><code>electronics.length</code> should give you a value of 3. The following is the output of electronics.length:</p>
+    <p id="demo1"><b></b></p>
+    <script>
+        electronics = ["phone", "microwave", "vacuum cleaner"];
+        document.getElementById("demo1").innerText = electronics.length
+    </script>
 </body>
 </html>
