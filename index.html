@@ -46,6 +46,26 @@
         electronics = ["phone", "microwave", "vacuum cleaner"];
         document.getElementById("demo1").innerText = electronics.length
     </script>
-<h1>TO BE CONTINUED</h1>
+<h1>Looping through Arrays</h1>
+<h2>Using "For" Loops</h2>
+<p><code>array.length</code> is really useful because you can basically use it in for loops to make a loop run once for each element in the array.</p>
+<p>here's a little loop that adds every item in an array to a bulleted list.</p>
+<p>Given that there is an array <code>restaurants = ["Summer Acai", "Monster Planet", "Melvados"];</code></p>
+<p id="demo2"></p>
+<script>
+    function arrayTolistGenerator() {
+        const restaurants = ["Summer Acai", "Monster Planet", "Melvados"];
+        arrayLength = restaurants.length;
+        let text = "<ul>";
+        for (i = 0, i < arrayLength, i++) {
+            text += "<li>"
+            text += restaurants[i]
+            text += "</li>"
+        }
+        text += "</ul>";
+        document.getElementById("demo2").innerHTML = text;
+    }
+    arrayToListGenerator()
+</script>
 </body>
 </html>
