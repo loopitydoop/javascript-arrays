@@ -70,13 +70,13 @@
         <p>The code that generates this is as follows:</p>
         <p><code>const restaurants = ["Summer Acai", "Monster Planet", "Melvados"];
                 arrayLength = restaurants.length;
-                let text = "<ul>";
-                for (i = 0, i < arrayLength, i++) {
-                    text += "<li>"
+                let text = "&lt;ul&gt;";
+                for (i = 0; i < arrayLength; i++) {
+                    text += "&lt;li&gt;"
                     text += restaurants[i]
-                    text += "</li>"
+                    text += "&lt;/li&gt;"
                 }
-                text += "</ul>";
+                text += "&lt;/ul&gt;";
                 document.getElementById("demo2").innerHTML = text;</code></p>
         <p>Basically the <code>for</code> loop in this case works by repeatedly appending html tags and the array elements to the variable <code>text</code>, before finally displaying it by replacing the html in a blank paragraph with the id "demo2"</p>
 </body>
