@@ -47,25 +47,37 @@
         document.getElementById("demo1").innerText = electronics.length
     </script>
 <h1>Looping through Arrays</h1>
-<h2>Using "For" Loops</h2>
-<p><code>array.length</code> is really useful because you can basically use it in for loops to make a loop run once for each element in the array.</p>
-<p>here's a little loop that adds every item in an array to a bulleted list.</p>
-<p>Given that there is an array <code>restaurants = ["Summer Acai", "Monster Planet", "Melvados"];</code></p>
-<p id="demo2"></p>
-<script>
-    function arrayTolistGenerator() {
-        const restaurants = ["Summer Acai", "Monster Planet", "Melvados"];
-        arrayLength = restaurants.length;
-        let text = "<ul>";
-        for (i = 0, i < arrayLength, i++) {
-            text += "<li>"
-            text += restaurants[i]
-            text += "</li>"
-        }
-        text += "</ul>";
-        document.getElementById("demo2").innerHTML = text;
-    }
-    arrayTolistGenerator();
-</script>
+    <h2>Using "For" Loops</h2>
+        <p><code>array.length</code> is really useful because you can basically use it in for loops to make a loop run once for each element in the array.</p>
+        <p>here's a little loop that adds every item in an array to a bulleted list.</p>
+        <p>Given that there is an array <code>restaurants = ["Summer Acai", "Monster Planet", "Melvados"];</code></p>
+        <p id="demo2"></p>
+        <script>
+            function arrayTolistGenerator() {
+                const restaurants = ["Summer Acai", "Monster Planet", "Melvados"];
+                arrayLength = restaurants.length;
+                let text = "<ul>";
+                for (i = 0, i < arrayLength, i++) {
+                    text += "<li>"
+                    text += restaurants[i]
+                    text += "</li>"
+                }
+                text += "</ul>";
+                document.getElementById("demo2").innerHTML = text;
+            }
+            arrayTolistGenerator();
+        </script>
+        <p>The code that generates this is as follows:</p>
+        <p><code>const restaurants = ["Summer Acai", "Monster Planet", "Melvados"];
+                arrayLength = restaurants.length;
+                let text = "<ul>";
+                for (i = 0, i < arrayLength, i++) {
+                    text += "<li>"
+                    text += restaurants[i]
+                    text += "</li>"
+                }
+                text += "</ul>";
+                document.getElementById("demo2").innerHTML = text;</code></p>
+        <p>Basically the <code>for</code> loop in this case works by repeatedly appending html tags and the array elements to the variable <code>text</code>, before finally displaying it by replacing the html in a blank paragraph with the id "demo2"</p>
 </body>
 </html>
